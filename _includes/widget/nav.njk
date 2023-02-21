@@ -1,0 +1,12 @@
+<div class="row mt-5">
+<div class="col-md-4 p-1">
+<p><a href="{{metadata.url}}">{{metadata.photographer}}</a></p>
+</div>
+<div class="col-md-8 p-1">
+<nav class="nav justify-content-end">{%- for entry in collections.all | eleventyNavigation %}
+<a class="nav-link" href="{{ entry.url }}">{{ entry.title }}</a>
+{%- endfor %}
+</nav>
+</div>
+{% include "widget/header.njk" %}
+</div>

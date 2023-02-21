@@ -1,0 +1,11 @@
+<div reversed class="row" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in postslist | reverse %}
+<div class="col-md-6 p-3 text-center">
+<a href="{{ post.url }}" class="postlist-link">
+<h3><strong>{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</strong></h3>
+<img class="img-fluid" alt="{{ post.data.title }}" width="100%" height="100%" src="{{ post.data.cover}}"/>  
+<p>{{ post.data.description }}</p>
+</a>
+</div>
+{% endfor %}
+</div>

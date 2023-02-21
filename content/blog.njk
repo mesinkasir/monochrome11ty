@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Archive
+  order: 2
+---
+<div class="col-md-12 mt-5 p-3 text-center">
+<h3><strong><a href="/">PHOTO BLOG UPDATE</a></strong></h3>
+<p>Our photo art services and blog update</p>
+</div>
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}

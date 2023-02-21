@@ -1,0 +1,27 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="Xi3WpckDbMBvm1pdlc5XukNoA9uWDmnExIiOeaTOxq0" />
+<title>{{ title or metadata.title }}</title>
+<meta name="description" content="{{ description or metadata.description }}">
+<meta name="title" content="{{ title or metadata.title }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ metadata.url }}">
+<meta property="og:title" content="{{ title or metadata.title }}">
+<meta property="og:description" content="{{ description or metadata.description }}">
+<meta property="og:image" content="{{ cover or metadata.cover }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ cover or metadata.cover }}">
+<meta property="twitter:title" content="{{ title or metadata.title }}">
+<meta property="twitter:description" content="{{ description or metadata.description }}">
+<meta property="twitter:image" content="{{ cover or metadata.cover }}">
+<meta content="index, follow" name="robots">
+<link rel="icon" type="image/svg+xml" href="{{ cover or metadata.cover }}">
+<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+<meta name="generator" content="{{ eleventy.generator }}">
+{%- css %}{% include "node_modules/bootstrap/dist/css/bootstrap.min.css" %}{% endcss %}
+{%- css %}{% include "public/css/index.css" %}{% endcss %}
+<style>{% getBundle "css" %}</style>
+</head>
+<body>

@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+---
+<img class="img-fluid" alt="{{description}}" width="100%" height="100%" src="{{cover}}"/>
+<div class="col-md-12 p-3">
+<h3><strong><a href="{{page.url}}">{{ title }}</a></strong></h3>
+<p class="lead">{{description}}</p>
+<p>
+{%- for tag in tags | filterTagList %}
+{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+<a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>{%- if not loop.last %}, {% endif %}
+{%- endfor %}
+</p>
+{{ content | safe }}
+{% include "widget/extra.njk" %}
+<hr/>
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<div class="row">
+{%- if previousPost %}<div class="col-md-6">Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></div>{% endif %}
+{%- if nextPost %}<div class="col-md-6 text-end">Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></div>{% endif %}
+</div>
+{%- endif %}
+{%- endif %}
+</div>
