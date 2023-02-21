@@ -1,6 +1,6 @@
 ---
 title: Retouch
-description: This is a post on My Blog about win-win survival strategies.
+description: I will edit your beauty photo retouching concept.
 cover: /img/beautyretouching.webp
 video: N-sVtvY1Lhk
 order: https://www.fiverr.com/creativitas/edit-photo-image-coloring-and-retouch
