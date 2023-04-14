@@ -6,7 +6,7 @@ module.exports = {
 	"photographer": "CREATIVE BY DRE",
 	"cover": "/img/photographersurabaya.webp",
 	"contact": "If you need to edit photo, so you can hire me .",
-	"wa": "6285646104747",
+	"wa": "62895339403223",
 	"call": "62895339403223",
 	"email": "axcora@gmail.com",
 	"hire": "Hire Me Now",
