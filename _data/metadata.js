@@ -10,6 +10,6 @@ module.exports = {
 	"call": "62895339403223",
 	"email": "axcora@gmail.com",
 	"hire": "Hire Me Now",
-	"hirelink": "https://www.fiverr.com/creativitas/edit-photo-image-coloring-and-retouch",
+	"hirelink": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JVZVXBC4N9DAN",
 	"sitename": "monochrome"
 }
